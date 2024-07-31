@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-13T18:42:37 IST" name="Default suite" finished-at="2023-10-13T18:44:07 IST" duration-ms="90153">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uitest.rmt.cucmberOptions.TestNGTestRunner@782859e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-10-13T18:42:37 IST" name="Default test" finished-at="2023-10-13T18:44:07 IST" duration-ms="90153">
+      <class name="com.uitest.rmt.cucmberOptions.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.uitest.rmt.cucmberOptions.TestNGTestRunner@782859e]" started-at="2023-10-13T18:42:37 IST" name="setUpClass" finished-at="2023-10-13T18:42:37 IST" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@27053257]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uitest.rmt.cucmberOptions.TestNGTestRunner@782859e]" started-at="2023-10-13T18:42:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-13T18:44:06 IST" duration-ms="88774" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Pool ID from all field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Pool ID for CT GUI App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a STRING value from a NUMERIC cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:987)
+at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:336)
+at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:280)
+at com.uitest.rmt.utils.ReadFromExcel.ReadFromExcelfile(ReadFromExcel.java:73)
+at com.uitest.rmt.pageObjects.Pool.SearchPoolPage.getPoolDataFromExcel(SearchPoolPage.java:74)
+at com.uitest.rmt.pageObjects.Pool.SearchPoolPage.fillAllDetails(SearchPoolPage.java:62)
+at stepDefinations.Pool.SearchPoolStep.User_should_fill_all_the_field_to_search_Pool_Id(SearchPoolStep.java:41)
+at ✽.User should fill all the field to search Pool Id(file:///C:/Users/03031V744/Downloads/CT%20GUI/CT%20GUI/RDC_CTUI_Automation/RDC_CTUI_Automation/src/test/java/features/Pool/SearchPool.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.uitest.rmt.cucmberOptions.TestNGTestRunner@782859e]" started-at="2023-10-13T18:44:06 IST" name="tearDownClass" finished-at="2023-10-13T18:44:07 IST" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.uitest.rmt.cucmberOptions.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
